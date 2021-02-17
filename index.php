@@ -47,9 +47,14 @@
 
        Welcome to website.<br><br>
          
-       <br><br>
-      
-      
-    </div>
+       <div style="font-size:15px; margin-top:150px">
+    
+    <a href="https://github.com/NARI4168/PHP_blog" style="font-size:50px">
+       <i class="fab fa-github"></i>
+    </a><br>
+    You can see the all code on my github.
+
+</div>
+</div>
 
 <?php include_once 'footer.php';?>
