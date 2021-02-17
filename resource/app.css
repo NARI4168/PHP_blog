@@ -1,0 +1,296 @@
+/* 폰트적용 */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+html, body{
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+ul, li {
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  
+  a {
+    color:inherit;
+    text-decoration:none;
+  }
+  
+  button, input[type="submit"] {
+    background-color:transparent;
+    border:0;
+    outline:0;
+    padding:0;
+    list-style:none;
+    display:inline;
+    cursor:pointer;
+    font-family:inherit;
+    font-size:inherit;
+  }
+
+/* 라이브러리 */
+.underline {
+    text-decoration:underline;
+  }
+  
+  .con {
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .border-red {
+    border:10px solid red;
+  }
+  .border-blue {
+    border:10px solid blue;
+  }
+
+
+/* 라이브러리 - flex */
+* > .flex {
+  display:flex;
+}
+
+* > .flex-grow-1 {
+  flex-grow:1;
+}
+
+* > .flex-jc-s {
+  justify-content:flex-start;
+}
+
+* > .flex-jc-e {
+  justify-content:flex-end;
+}
+
+* > .flex-jc-sb {
+  justify-content:space-between;
+}
+
+* > .flex-ai-c {
+  align-items:center;
+}
+
+* > .flex-ai-s {
+  align-items:flex-start;
+}
+
+* > .flex-ai-e {
+  align-items:flex-end;
+}
+
+* > .flex-as-s {
+  align-self:stretch;
+}
+
+* > .flex-as-c {
+  align-self:center;
+}
+
+* > .flex-as-s {
+  align-self:flex-start;
+}
+
+* > .flex-as-e {
+  align-self:flex-end;
+}
+
+* > .flex-column-nowrap {
+  flex-flow:column nowrap;
+}
+
+* > .flex-column-wrap {
+  flex-flow:column wrap;
+}
+
+.flex-ch-basis-0 > * {
+  flex-basis:0;
+}
+
+* > .flex-1-0-0 {
+  flex:1 0 0;
+}
+
+.con {
+    max-width:1356px;
+  }
+  
+/* 로고 시작 */
+.logo-bar {
+    height:80px;
+    background-color:black;
+    text-align: center;
+   
+  }
+
+.logo {
+    font-weight:bold;
+    font-size:3.5rem; 
+    color: teal;
+    text-shadow: 3px 1px 2px black;
+
+  }
+/* 상단바 시작 */
+.top-bar {
+ /*position: fixed;
+ margin-top: 20;
+ width: 100% ;*/
+  text-align: center;
+  height:100px;
+  background-color:black;
+  color:#fff;
+  position: relative;
+  border-bottom: solid 1px;
+  border-bottom-color:#fff;
+}
+  
+.top-bar .menu-box-1 > ul > li > a {
+  font-weight:bold;
+  font-size:1.4rem;
+  padding:30px 95px;
+}
+
+.top-bar .menu-box-1 > ul > li:hover > a {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.5);
+  color: #edacb1;
+  
+}
+
+
+/* 전체배경 */
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #fff; 
+}
+
+#content {
+    width: 100%;
+    min-height: 87%;
+    margin: 0 0 -50px 0;
+    background: black;
+}
+
+
+
+.text_con {
+    color: #eeeeee;
+    font-weight:bold;
+    font-size:20px;
+    text-align: center;
+    padding: 50px 0 100px 0;    
+}
+
+.pop {
+    font-weight:normal;
+    font-size:25px;
+    text-align: center;    
+    color:black;
+
+}
+.pop .left{
+    text-align: left;
+    font-size:20px;
+    padding :0 0 0 10px;
+}
+.pop .delete{
+    text-align: right;
+    font-size:20px;
+    padding :0 50px 0 0;
+}
+.pop .center{
+    text-align: center;
+    font-size:25px;
+    padding :130px 0 0 125px;
+}
+
+/* 하단바 */
+.foot-bar{
+  background-color:black; 
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding:10px 30px;
+  color:#fff;
+  width:100%;
+}
+.foot-bar .icon{
+  color:#fff;
+  font-size:20px;
+  text-shadow: none;
+}
+
+/*게시판*/
+.article{
+    color:#fff;
+    font-weight:bold;
+    font-size: 25px;
+    text-align:left;
+    padding: 10px 30px 100px 30px;
+    
+}
+.list{
+    color:#fff;
+    font-size: 25px;
+    font-weight:bold;
+    text-align:left;
+    padding: 0 45px 0 45px;
+    
+}
+.list .no{
+    font-size: 20px;
+    color:#fff;
+     
+}
+.list .writer, .date{
+    font-size: 20px;
+    color:#fff;
+   
+}
+.article .icon{
+    font-size: 200px;
+    text-align:left;
+    color: gold;
+    padding: 0 60px 0 60px;
+    
+    
+}
+  
+.sticky {
+    display: inline-block;
+    width: 300px;
+    height: 300px;    
+    margin: 2% 4%;
+    background-image:      
+        url("/gold_sticky.png");
+    background-color: transparent;
+    background-size: cover;
+    
+  }
+
+.box{
+    display: inline-block;
+    width: 1000px;
+    height: 300px;    
+    border: solid 1px #808080;
+    padding: 0 0 0 30px;
+    margin: 0;
+
+  }
+.call{
+    font-size: 20px;
+    font-weight:bold; 
+    color:#fff;
+}
+
+
